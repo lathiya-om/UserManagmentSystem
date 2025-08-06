@@ -120,7 +120,7 @@ mvn spring-boot:run
 
 ```bash
 git clone https://github.com/your-username/User-Management-System.git
-cd User-Management-System/backend
+cd UserManagment
 ```
 
 ---

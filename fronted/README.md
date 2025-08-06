@@ -57,8 +57,8 @@ A beautiful, modern React authentication application with a stunning UI built us
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd frontedgithub
+   git clon https://github.com/lathiya-om/UserManagmentSystem.git
+   cd fronted
    ```
 
 2. **Install dependencies**

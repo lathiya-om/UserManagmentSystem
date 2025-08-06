@@ -1,0 +1,57 @@
+# === Java / Spring Boot (Maven) ===
+HELP.md
+target/
+build/
+logs/
+*.log
+*.jar
+
+# === Maven wrapper ===
+.mvn/
+!/.mvn/wrapper/maven-wrapper.properties
+
+# === React (Vite) ===
+fronted/node_modules/
+fronted/dist/
+fronted/.env
+fronted/.env.*.local
+fronted/coverage/
+fronted/package-lock.json
+fronted/yarn.lock
+fronted/pnpm-lock.yaml
+
+# === IntelliJ IDEA ===
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# === VS Code ===
+.vscode/
+
+# === Eclipse / STS ===
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# === NetBeans ===
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# === macOS & Windows System Files ===
+.DS_Store
+Thumbs.db
+
+# === Sublime Text ===
+*.sublime-project
+*.sublime-workspace
+
+# === Misc ===
+*.local

@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql-db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: UserManageSystem
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  backend:
+    build: .
+    container_name: user-managment-backend
+    depends_on:
+      - mysql
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql-db:3306/UserManageSystem
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: root
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+      JWT_SECRET: 3df7a8716e3f4fc0b27e9cde30ae8fefbdc3fa96ab5405e4a6438a62d08f60f9
+      JWT_EXPIRATION: 86400000
+      JWT_REFRESH_EXPIRATION: 604800000
+    volumes:
+      - ./logs:/app/logs
+    restart: always
+
+volumes:
+  mysql_data:

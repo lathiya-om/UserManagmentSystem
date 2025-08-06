@@ -1,0 +1,44 @@
+# --- Top-level project files ---
+HELP.md
+
+# --- Maven wrapper ---
+.mvn/wrapper/maven-wrapper.jar
+
+# --- Build output ---
+target/
+build/
+logs/
+
+# --- Compiled artifacts ---
+*.jar
+
+# --- IDE: Spring Tool Suite (STS) ---
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# --- IDE: IntelliJ IDEA ---
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# --- IDE: NetBeans ---
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# --- IDE: VS Code ---
+.vscode/
+
+# --- Allow exceptions (not needed usually; remove to keep it simple) ---
+# !**/src/main/**/target/
+# !**/src/test/**/target/
+# !**/src/main/**/build/
+# !**/src/test/**/build/

@@ -85,8 +85,8 @@ src/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/User-Management-System.git
-cd User-Management-System/backend
+git clone https://github.com/lathiya-om/UserManagmentSystem.git
+cd UserManagment
 ```
 
 ### 2. Configure MySQL Database
@@ -201,7 +201,7 @@ This project is licensed under the **MIT License**.
 
 ## ✍️ Author
 
-This project is maintained by **[Your Name]**
+This project is maintained by **Om Lathiya**
 
 ---
 
